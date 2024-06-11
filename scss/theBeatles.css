@@ -1,0 +1,110 @@
+@font-face {
+  font-family: "Certeau";
+  src: url("/content/fonts/CerteauWeb-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "CerteauBold";
+  src: url("/content/fonts/CerteauProWeb-Bold.woff2") format("woff2");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: black;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html, body {
+  width: 100%;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  font-family: "Certeau";
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.container {
+  width: 90%;
+}
+
+.navigation {
+  height: 8em;
+}
+.navigation .logo {
+  grid-area: logo;
+  width: 3em;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.content .contentInner {
+  margin-bottom: 3em;
+}
+.content .contentVideo {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3em;
+}
+.content img {
+  width: 100%;
+}
+.content video {
+  width: 100%;
+  display: block;
+}
+
+@media (min-width: 1000px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+  }
+  .container {
+    width: 94%;
+  }
+  .navigation {
+    height: 10em;
+  }
+  .navigation .logo {
+    grid-area: logo;
+    width: 5em;
+  }
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "title description" "video video";
+    gap: 3em;
+  }
+  .content .contentTitle {
+    grid-area: title;
+  }
+  .content .contentDescription {
+    grid-area: description;
+  }
+  .content .contentVideo {
+    grid-area: video;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3em;
+  }
+  .content video {
+    width: 100%;
+    display: block;
+  }
+}/*# sourceMappingURL=theBeatles.css.map */

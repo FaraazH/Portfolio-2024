@@ -1,0 +1,178 @@
+@font-face {
+  font-family: "Certeau";
+  src: url("/content/fonts/CerteauWeb-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "CerteauBold";
+  src: url("/content/fonts/CerteauProWeb-Bold.woff2") format("woff2");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: black;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html, body {
+  width: 100%;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  font-family: "Certeau";
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.container {
+  width: 90%;
+}
+
+.navigation {
+  height: 20em;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "logo" "about";
+  margin-bottom: 8em;
+}
+.navigation .logo {
+  grid-area: logo;
+  width: 3em;
+}
+.navigation .about {
+  grid-area: about;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.navigation .about p {
+  font-size: 2em;
+  font-family: "certeau";
+}
+
+.content {
+  display: grid;
+}
+.content img {
+  width: 100%;
+  display: block;
+}
+.content video {
+  width: 100%;
+}
+.content .text {
+  margin-bottom: 8em;
+}
+.content .title {
+  margin-top: 1em;
+  font-size: 1.2em;
+}
+.content .description {
+  margin-top: 1em;
+}
+
+.contactText {
+  height: 100vh;
+  width: 100%;
+  background-color: #526D69;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contactText .contactTextInner {
+  width: 90%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: flex-end;
+}
+.contactText .contactTextInner p {
+  color: white;
+  font-size: 1.1em;
+}
+
+@media (min-width: 1000px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+  }
+  .container {
+    width: 94%;
+  }
+  .navigation {
+    height: 7em;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "logo about";
+    margin-bottom: 8em;
+  }
+  .navigation .logo {
+    grid-area: logo;
+    width: 5em;
+  }
+  .navigation .about {
+    grid-area: about;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .navigation .about p {
+    font-size: 1.6em;
+    font-family: "certeau";
+  }
+  .content {
+    grid-template-areas: "content1 content2" "content3 content4" "content5 .";
+    gap: 2em;
+  }
+  .content img {
+    width: 100%;
+    display: block;
+  }
+  .content .text {
+    margin-bottom: 8em;
+  }
+  .content .title {
+    margin-top: 1em;
+    font-size: 1.2em;
+  }
+  .content .description {
+    margin-top: 1em;
+  }
+  .contactText {
+    height: 100vh;
+    width: 100%;
+    background-color: #526D69;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contactText .contactTextInner {
+    width: 94%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: flex-end;
+  }
+  .contactText .contactTextInner p {
+    font-size: 1.2em;
+  }
+}/*# sourceMappingURL=homepage.css.map */

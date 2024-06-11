@@ -1,0 +1,233 @@
+//TYPE
+@font-face {
+    font-family: 'Certeau';
+    src: url('/content/fonts/CerteauWeb-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'CerteauBold';
+    src: url('/content/fonts/CerteauProWeb-Bold.woff2') format('woff2');
+}
+
+//STRUCTURE
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html, body {
+    width: 100%;
+    -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
+    user-select: none;
+    font-family: 'Certeau';
+}
+
+main {
+    // background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.container {
+    width: 90%;
+    // background-color: pink;
+}
+
+.navigation {
+    // background-color: yellow;
+    height: 20em;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    'logo'
+    'about';
+    margin-bottom: 8em;
+
+    .logo {
+        grid-area: logo;
+        width: 3em;
+        // background-color: bisque;
+    }
+
+    .about {
+        grid-area: about;
+        // background-color: aquamarine;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+
+        p {
+            font-size: 2em;
+            font-family: 'certeau';
+        }
+    }
+}
+
+.content {
+    // background-color: #526D69;
+    display: grid;
+
+    img {
+        width: 100%;
+        display: block;
+    }
+
+    video {
+        width: 100%;
+    }
+
+    .text {
+        margin-bottom: 8em;
+    }
+
+    .title {
+        margin-top: 1em;
+        font-size: 1.2em;
+        // background-color: aliceblue;
+    }
+
+    .description {
+        margin-top: 1em;
+        // background-color: antiquewhite;
+    }
+
+}
+
+.contactText {
+    height: 100vh;
+    width: 100%;
+    background-color: #526D69;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .contactTextInner {
+        // background-color: red;
+        width: 90%;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        align-items: end; 
+        justify-content: flex-end;  
+        
+        p {
+            color: white;
+            font-size: 1.1em;
+            // background-color: red;
+        }
+    }
+}
+
+@media (min-width: 1000px) {
+
+    main {
+        // background-color: red;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3%;
+    }
+    
+    .container {
+        width: 94%;
+        // background-color: pink;
+    }
+    
+    .navigation {
+        // background-color: yellow;
+        height: 7em;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        'logo about';
+        margin-bottom: 8em;
+    
+        .logo {
+            grid-area: logo;
+            width: 5em;
+            // background-color: bisque;
+        }
+    
+        .about {
+            grid-area: about;
+            // background-color: aquamarine;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            // align-items: end;
+    
+            p {
+                font-size: 1.6em;
+                font-family: 'certeau';
+                // background-color: red;
+            }
+        }
+    }
+    
+    .content {
+        grid-template-areas: 
+        'content1 content2'
+        'content3 content4'
+        'content5 .';
+        gap: 2em;
+    
+        img {
+            width: 100%;
+            display: block;
+    
+        }
+    
+        .text {
+            margin-bottom: 8em;
+        }
+    
+        .title {
+            margin-top: 1em;
+            font-size: 1.2em;
+            // background-color: aliceblue;
+        }
+    
+        .description {
+            margin-top: 1em;
+            // background-color: antiquewhite;
+        }
+    
+    }
+    
+    .contactText {
+        height: 100vh;
+        width: 100%;
+        background-color: #526D69;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        .contactTextInner {
+            // background-color: red;
+            width: 94%;
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            align-items: end; 
+            justify-content: flex-end;   
+
+            p {
+                font-size: 1.2em;
+            }
+        }
+    }
+}
