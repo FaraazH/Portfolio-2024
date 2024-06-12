@@ -122,10 +122,12 @@ main {
         align-items: end; 
         justify-content: flex-end;  
         
-        p {
+        a {
             color: #86E0DC;
             text-decoration: none;
             font-size: 1.1em;
+            pointer-events: none;
+
             // background-color: red;
         }
     }
@@ -226,10 +228,11 @@ main {
             align-items: end; 
             justify-content: flex-end;   
 
-            p {
+            a {
                 font-size: 1.2em;
                 color: #86E0DC;
                 text-decoration: none;
+                pointer-events: none;
             }
         }
     }

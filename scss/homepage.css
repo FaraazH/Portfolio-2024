@@ -100,9 +100,11 @@ main {
   align-items: end;
   justify-content: flex-end;
 }
-.contactText .contactTextInner p {
+.contactText .contactTextInner a {
   color: #86E0DC;
+  text-decoration: none;
   font-size: 1.1em;
+  pointer-events: none;
 }
 
 @media (min-width: 1000px) {
@@ -172,8 +174,10 @@ main {
     align-items: end;
     justify-content: flex-end;
   }
-  .contactText .contactTextInner p {
+  .contactText .contactTextInner a {
     font-size: 1.2em;
     color: #86E0DC;
+    text-decoration: none;
+    pointer-events: none;
   }
 }/*# sourceMappingURL=homepage.css.map */
