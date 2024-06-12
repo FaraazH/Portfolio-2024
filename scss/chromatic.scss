@@ -133,7 +133,9 @@ main {
         max-width: 600px;
     }
 
-  
+    .descriptionContainer {
+      width: 100%;
+    }
 
     .innerContainer {
         display: flex;
@@ -143,6 +145,7 @@ main {
         position: relative;
 
         .innerDescriptionContainer {
+
             position: absolute;
             text-align: center;
             font-size: .7em;

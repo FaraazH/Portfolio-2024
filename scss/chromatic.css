@@ -117,6 +117,9 @@ main {
   position: absolute;
   max-width: 600px;
 }
+.mainContainer .descriptionContainer {
+  width: 100%;
+}
 .mainContainer .innerContainer {
   display: flex;
   flex-direction: column;
