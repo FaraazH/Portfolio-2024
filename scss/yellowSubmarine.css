@@ -80,7 +80,7 @@ main {
   }
   .navigation .logo {
     grid-area: logo;
-    width: 5em;
+    width: 5.5em;
   }
   .content {
     display: grid;

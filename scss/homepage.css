@@ -86,7 +86,7 @@ main {
 .contactText {
   height: 100vh;
   width: 100%;
-  background-color: #526D69;
+  background-color: #17454D;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -101,7 +101,7 @@ main {
   justify-content: flex-end;
 }
 .contactText .contactTextInner p {
-  color: white;
+  color: #86E0DC;
   font-size: 1.1em;
 }
 
@@ -125,7 +125,7 @@ main {
   }
   .navigation .logo {
     grid-area: logo;
-    width: 5em;
+    width: 5.5em;
   }
   .navigation .about {
     grid-area: about;
@@ -158,7 +158,7 @@ main {
   .contactText {
     height: 100vh;
     width: 100%;
-    background-color: #526D69;
+    background-color: #17454D;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -174,5 +174,6 @@ main {
   }
   .contactText .contactTextInner p {
     font-size: 1.2em;
+    color: #86E0DC;
   }
 }/*# sourceMappingURL=homepage.css.map */

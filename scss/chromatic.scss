@@ -133,9 +133,7 @@ main {
         max-width: 600px;
     }
 
-    .descriptionContainer {
-        width: 100%;
-    }
+  
 
     .innerContainer {
         display: flex;
@@ -148,15 +146,11 @@ main {
             position: absolute;
             text-align: center;
             font-size: .7em;
-            font-family: 'PPNeueMontreal-Book';
+            font-family: 'PPNeueMontreal';
             color: #cccccc;
         }
     }
 }
-
-
-
-
 
 .outerRing, .innerRing {
     fill: none;
@@ -407,7 +401,7 @@ main {
      
         .logo {
             grid-area: logo;
-            width: 5em;
+            width: 5.5em;
             // background-color: bisque;
         }
     }
@@ -461,7 +455,7 @@ main {
             position: absolute;
             text-align: center;
             font-size: .9em;
-            font-family: 'PPNeueMontreal-Book';
+            font-family: 'PPNeueMontreal';
             color: #cccccc;
         }
     }
