@@ -104,7 +104,7 @@ main {
 
 .mainContainer {
   width: 100%;
-  max-width: 800px;
+  max-width: 700px;
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
   position: relative;
@@ -141,7 +141,7 @@ main {
 }
 
 .grayIndex {
-  z-index: -2;
+  z-index: -1;
 }
 
 .intro {

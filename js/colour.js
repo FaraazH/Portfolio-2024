@@ -404,7 +404,6 @@ noteHomeButton.addEventListener('click', () => {
 
     noteButtonCircle.classList.add('fill');
 
-    chromaticNoteButtons.classList.add('clear');
     flatText.forEach(clear => clear.classList.add('clear'));
     hzButtonContainer.classList.add('clear');
 
@@ -422,7 +421,6 @@ noteButton.addEventListener('click', () => {
     noteFreqCircle.classList.remove('fill');
     notePitchCircle.classList.remove('fill');
 
-    chromaticNoteButtons.classList.add('clear');
 
     noteText.forEach(clear => (clear.classList.remove('clear')));
 
@@ -446,7 +444,6 @@ noteFreqButton.addEventListener('click', () => {
     noteButtonCircle.classList.remove('fill');
     noteFreqCircle.classList.add('fill');
 
-    chromaticNoteButtons.classList.add('clear');
 
     grayButtonContainer.classList.remove('clear');
     pitchButtonContainer.classList.add('clear');
@@ -476,8 +473,6 @@ notePitchButton.addEventListener('click', () => {
     noteButtonCircle.classList.remove('fill');
     noteFreqCircle.classList.remove('fill');
 
-    // chromaticNoteButtons.forEach(clear => (clear.classList.add('clear')));
-    chromaticNoteButtons.classList.add('clear');
     noteText.forEach(clear => (clear.classList.add('clear')));
 
     grayButtonContainer.classList.add('grayIndex');
@@ -505,7 +500,6 @@ noteBackButton.addEventListener('click', () => {
     noteButtonCircle.classList.remove('fill');
     noteFreqCircle.classList.remove('fill');
 
-    chromaticNoteButtons.classList.remove('clear');
     noteText.forEach(clear => (clear.classList.remove('clear')));
     grayButtonContainer.classList.remove('grayIndex');
     grayButtonContainer.classList.remove('clear');
